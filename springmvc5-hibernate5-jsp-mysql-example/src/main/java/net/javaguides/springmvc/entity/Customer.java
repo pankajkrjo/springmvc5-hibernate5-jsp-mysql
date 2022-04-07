@@ -1,6 +1,6 @@
 package net.javaguides.springmvc.entity;
 
-import java.util.List;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,9 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
-import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name = "customer")
@@ -43,7 +41,7 @@ public class Customer {
     @Column(name = "cityTo")
     private String cityTo; 
     
-    @NotNull
+    @Column(name="name")
     private String name;
  
    // private String description;
@@ -108,7 +106,7 @@ public class Customer {
 	}
 
 	public void setGender(String gender) {
-		gender = gender;
+		this.gender = gender;
 	}
 
 	public String[] getFood() {
@@ -116,7 +114,7 @@ public class Customer {
 	}
 
 	public void setFood(String[] food) {
-		food = food;
+		this.food = food;
 	}
 
 	public String getCityFrom() {

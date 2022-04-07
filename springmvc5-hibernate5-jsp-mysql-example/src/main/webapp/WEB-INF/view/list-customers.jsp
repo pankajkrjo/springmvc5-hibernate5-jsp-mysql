@@ -58,11 +58,15 @@
         <td>${tempCustomer.lastName}</td>
         <td>${tempCustomer.email}</td>
         <td>${tempCustomer.gender} </td>
+        
+        <c:forEach var="meal" items="${tempCustomer.food}">
          <td>${meal}</td>
+        </c:forEach>
+      
         <td>${tempCustomer.cityFrom} </td>
         <td>${tempCustomer.cityTo} </td>
 
-       <td>Name: ${tempCustomer.name}</td>
+       <td> ${tempCustomer.name}</td>
         
          <!-- display the update link --> <a href="${updateLink}">Update</a>
          | <a href="${deleteLink}"

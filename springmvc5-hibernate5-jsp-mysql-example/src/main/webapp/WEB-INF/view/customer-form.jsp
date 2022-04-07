@@ -53,39 +53,42 @@
       </div>
 
     <div class="form-group">
-       <label for="Gender" class="col-md-3 control-label">Gender</label>
+       <label for="gender" class="col-md-3 control-label">Gender</label>
        <div class="col-md-9">
-        Gender:   
-        Male<form:radiobutton path="Gender" value="Male"/>  
-        Female<form:radiobutton path="Gender" value="Female"/>  
+        Gender:
+        Male<form:radiobutton path="gender" value="Male"/>  
+        Female<form:radiobutton path="gender" value="Female"/>  
        </div>
       </div>
       
       
 
   <div class="form-group">
-       <label for="BreakFast" class="col-md-3 control-label">BreakFast</label>
+       <label for="food" class="col-md-3 control-label">BreakFast</label>
        <div class="col-md-9">
         Meals:  
-        BreakFast<form:checkbox path="Food" value="BreakFast"/>  
-        Lunch<form:checkbox path="Food" value="Lunch"/>  
-        Dinner<form:checkbox path="Food" value="Dinner"/>  
+        BreakFast<form:checkbox path="food" value="BreakFast"/>  
+        Lunch<form:checkbox path="food" value="Lunch"/>  
+        Dinner<form:checkbox path="food" value="Dinner"/>  
        </div>
-      </div>
+  </div>
       
       <div class="form-group">
        <label for="cityFrom" class="col-md-3 control-label">cityFrom</label>
        <div class="col-md-9">
-        Meals:  
-        BreakFast<form:checkbox path="Food" value="BreakFast"/>  
-        Lunch<form:checkbox path="Food" value="Lunch"/>  
-        Dinner<form:checkbox path="Food" value="Dinner"/>  
+       Leaving from: <form:select path="cityFrom">  
+        <form:option value="Ghaziabad" label="Ghaziabad"/>  
+        <form:option value="Modinagar" label="Modinagar"/>  
+        <form:option value="Meerut" label="Meerut"/>  
+        <form:option value="Amristar" label="Amristar"/>  
+        </form:select>    
+        
        </div>
       </div>
       
       
        <div class="form-group">
-       <label for="cityFrom" class="col-md-3 control-label">cityFrom</label>
+       <label for="cityTo" class="col-md-3 control-label">cityFrom</label>
        <div class="col-md-9">
         Going to: <form:select path="cityTo">  
         <form:option value="Ghaziabad" label="Ghaziabad"/>  
