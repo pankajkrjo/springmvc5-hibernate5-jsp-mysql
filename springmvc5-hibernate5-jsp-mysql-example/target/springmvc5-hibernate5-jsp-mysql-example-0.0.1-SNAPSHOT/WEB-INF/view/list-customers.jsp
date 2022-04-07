@@ -36,7 +36,7 @@
        <th>City From</th>
        <th>Going TO</th>
        <th>Name</th>
-       <th>Image</th>
+      <!--  <th>Image</th> -->
        <th>Action</th>
       </tr>
 
